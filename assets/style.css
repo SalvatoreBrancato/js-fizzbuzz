@@ -1,0 +1,88 @@
+.box1{
+    background-color: red;
+    animation: orario 4s linear infinite; 
+}
+
+@keyframes orario {
+  0% {
+    transform: rotate(0deg) scaleX(100%);
+  }
+  25%{
+    transform: rotate(90deg) scaleX(40%)
+  }
+  50% {
+    transform: rotate(180deg) scaleX(40%);
+  }    
+   75% {
+        transform: rotate(270deg) scaleX(40%);
+  }
+      
+  100% {
+    transform: rotate(360deg) scaleX(100%);
+    
+  }
+}
+
+.box2{
+    background-color: rgb(252, 224, 7);
+    animation: anti-orario 4s linear infinite;
+}
+
+@keyframes anti-orario {
+    0% {
+        transform:scaleY(75%)
+      }
+      50% {
+        transform: scaleY(100%);
+      }
+      100% {
+        transform: scaleY(75%);
+      }
+    }
+  
+
+.box3{
+    background-color: rgb(60, 217, 60);
+    animation: zoom 4s linear infinite;
+}
+
+@keyframes zoom {
+    0% {
+      transform:scaleX(75%)
+    }
+    50% {
+      transform: scaleX(100%);
+    }
+    100% {
+      transform: scaleX(75%);
+    }
+  }
+
+.box4{
+    background-color: rgb(7, 195, 238);
+    animation: zoom- 4s linear infinite;
+}
+
+@keyframes zoom- {
+    0% {
+      transform:scaleX(100%)
+    }
+    50% {
+      transform: scaleX(75%);
+    }
+    100% {
+      transform: scaleX(100%);
+    }
+  }
+
+.box1,
+.box2,
+.box3,
+.box4{
+    width: calc(90% / 5);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
